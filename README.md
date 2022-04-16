@@ -2,10 +2,10 @@
 
 Live page - https://calculator-mortgage-payments.netlify.app
 
-<h6>Frontend</h3>
+<h5>Frontend</h5>
  <p>https://github.com/Roman-Lahoda/eliftech-frontend</p>
 <p>'npm start'</p>
 
-<h6>Backend</h3>
+<h5>Backend</h5>
  <p>https://github.com/Roman-Lahoda/eliftech-backend</p>
 <p>'npm run start:dev'</p>

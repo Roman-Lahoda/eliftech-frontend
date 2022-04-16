@@ -1,0 +1,32 @@
+.box {
+    position: relative;
+padding-top: 30px;
+}
+
+.form_item {
+    margin: 10px 0;
+    padding: 2px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    margin: 0 3px;
+    border: 1px solid black;
+}
+
+.btn_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    margin-left: 300px;
+    border-radius: 50%;
+}
+
+.btn_submit {
+    cursor: pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

@@ -1,0 +1,59 @@
+.select {
+    position: relative;
+    border: 2px solid rgb(66, 71, 66);
+    width: 300px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.select::after {
+    content: '⮁';
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.option {
+    display: none;
+    position: absolute;
+    padding: 0 5px;
+    width: 300px;
+    top: 100%;
+    left: -2px;
+    background-color: #fff;
+    border: 2px solid rgb(66, 71, 66);
+    border-top: none;
+}
+
+.item{
+    margin-bottom: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.open {
+    display: block;
+    height: auto;
+    overflow-y: scroll;
+}
+
+.calculator_page {
+    padding-top: 30px;
+}
+
+.payment {
+    font-size: 22px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form {
+    margin-right: 30px;
+}

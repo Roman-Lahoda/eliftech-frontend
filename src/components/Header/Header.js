@@ -1,10 +1,16 @@
+import { toast } from 'react-toastify';
 import { NavLink } from 'react-router-dom';
 import { logout } from '../../service/auth/index.js';
 import s from './Header.module.scss';
 const Header = ({ setIsLoggedIn }) => {
   const isLoggedIn = JSON.parse(localStorage.getItem('user'));
   const logoutUser = () => {
-    logout().then(() => setIsLoggedIn(false));
+    logout().then(() => {
+      localStorage.removeItem('user');
+      localStorage.removeItem('banks');
+      toast.success('Goodbuy');
+      setIsLoggedIn(false);
+    });
   };
   return (
     <div className={s.header}>

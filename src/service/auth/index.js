@@ -2,9 +2,10 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 axios.defaults.baseURL =
-  process.env.NODE_ENV === 'development'
-    ? 'http://localhost:4000'
-    : 'https://eliftech-calculator.herokuapp.com/';
+  // process.env.NODE_ENV === 'development'
+  //   ? 'http://localhost:4000'
+  //   :
+  'https://eliftech-calculator.herokuapp.com/';
 
 const token = {
   set(token) {
@@ -43,12 +44,12 @@ const logout = async () => {
   try {
     const { data } = await axios.post('/auth/logout');
     token.unset();
-    localStorage.removeItem('user');
-    localStorage.removeItem('banks');
-    toast.success('Goodbuy');
+    // localStorage.removeItem('user');
+    // localStorage.removeItem('banks');
+    // toast.success('Goodbuy');
     return data.data;
   } catch (err) {
-    toast.error('An error occurred, please try again later');
+    // toast.error('An error occurred, please try again later');
   }
 };
 

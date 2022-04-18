@@ -4,8 +4,8 @@ import s from './CalculatorPage.module.scss';
 const CalculatorPage = () => {
   const banks = JSON.parse(localStorage.getItem('banks')) || [];
 
-  const [initialLoan, setInitialLoan] = useState();
-  const [downPayment, setDownPayment] = useState();
+  const [initialLoan, setInitialLoan] = useState('');
+  const [downPayment, setDownPayment] = useState('');
   const [selectBankOpen, setSelectBankOpen] = useState(false);
   const [selectedBank, setSelectedBank] = useState();
   const [payment, setPayment] = useState();
